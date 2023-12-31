@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Forum&display=swap');
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    .labels {
+        display: flex;
+            margin-bottom: 10px;
+         
+    }
+    
+
+    input[type="search"] {
+        width: 625px;
+        height: 45px;
+        border-radius: 16px;
+        border: 1px solid #808080;
+        padding: 0 0 0 30px;
+        margin: 16px 0 16px 0;
+        font-size: 15px;
+    }
+
+    .fa-search {
+        position: absolute;
+        right: 4%;
+        color: #808080;
+    }
+}
+body {
+    margin-top: 80px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer,
+header {
+    font-family: "Forum";
+}
+header {
+    display: flex;
+    flex-direction: column;
+    .logo {
+        color: #02a437;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        font-family: 'Comforter', cursive;
+    img  {
+        height: 54px;
+    }
+}
+
+    
+
+    .undheader {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 9999999999;
+        height: 54px;
+    }
+}
+footer {
+    background-color: #cccccc;
+    margin-top: 50px;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    .container {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+    }
+  }
+.line {
+    background-color: #808080;
+    height: 0.75px;
+    width: 100%;
+    position: fixed;
+    top: 54px;
+    z-index: 99999999;
+}
+.full,
+.about {
+    display: flex;
+
+    img {
+        margin: 0 5% 0 10%;
+    }
+    .rating {
+        color: gold;
+        display: flex;
+        position: absolute;
+        margin-left: 600px;
+    }
+    .caption {
+            display: flex;
+        }
+    .harac {
+        color: #808080;
+        margin-bottom: 15px;
+        font-size: 17px;
+        width: 400px;
+        
+        p {
+            overflow: hidden;
+        }
+
+        p:after {
+            content: '........................................................................................................';
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        p span:first-of-type {
+            float: left;
+            margin-right: 10px;
+        }
+
+        p span:last-of-type {
+            float: right;
+            margin-left: 10px;
+            color: black;
+        }
+
+        .minicaption {
+            color: #808080;
+        }
+
+        .minicaption1 {
+            margin-top: 15px;
+        }
+
+        .caption {
+            font-family: "Forum";
+            font-size: 55px;
+        }
+    }
+        .info {
+            font-family: "Monts";
+            font-size: 15px;
+
+            .harac {
+                color: #808080;
+                margin-bottom: 15px;
+            }
+
+            .minicaption {
+                color: #808080;
+            }
+
+            .minicaption1 {
+                margin-top: 15px;
+            }
+
+            .caption {
+                font-family: "Forum";
+                font-size: 55px;
+            }
+
+            .har {
+                margin-bottom: 30px;
+            }
+
+            .button {
+                background-color: gold;
+                padding: 8px;
+                border-radius: 8px;
+                margin-top: 30px;
+                margin-right: 45px;
+            }
+
+            .button-call {
+                background-color: #00A86B;
+                margin-top: 30px;
+            }
+        }
+    }
+.undcapt {
+    font-size: 24px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.about {
+    margin-top: 60px;
+    font-family: "Monts";
+    div:first-child {
+        margin-left: 10%;
+    }
+    .desc {
+        width: 700px;
+        margin-left: 10%;
+        font-size: 20px;
+        color: #808080;
+        font-family: "Forum";
+        .caption {
+            color: black;
+            font-family: "Monts";
+        }
+    }
+}
+.cart {
+    margin: 0 2% 20px 2%;
+    display: flex;
+    width: 400px;
+    
+    * {
+        margin: 5px;
+    }
+
+    img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .cap{
+        background-color: #00A86B;
+        padding: 15px;
+        color: white;
+        height: 50%;
+        width: 100%;
+    }
+    i {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 10%
+}
+.price {
+    display: flex;
+
+    * {
+        margin-right: 15px;
+    }
+
+    p:last-child {
+        font-size: 23px;
+        display: flex;
+        align-items: end;
+        color: #808080;
+    }
+}
+.writers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.loader {
+    width: 21em;
+    height: 21em;
+    font-size: 10px;
+    position: relative;
+    margin-left: 40%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader .face {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    animation: animate 3s linear infinite;
+}
+
+.loader .face:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    color: gold;
+    border-color: currentColor transparent transparent currentColor;
+    border-width: 0.2em 0.2em 0em 0em;
+    --deg: -45deg;
+    animation-direction: normal;
+}
+
+.loader .face:nth-child(2) {
+    width: 70%;
+    height: 70%;
+    color: blue;
+    border-color: currentColor currentColor transparent transparent;
+    border-width: 0.2em 0em 0em 0.2em;
+    --deg: -135deg;
+    animation-direction: reverse;
+}
+.loader .face:nth-child(3) {
+    width: 40%;
+    height: 40%;
+    color: red;
+    border-color: currentColor transparent transparent currentColor;
+    border-width: 0.2em 0em 0em 0.2em;
+    --deg: -25deg;
+    animation-direction: normal;
+}
+
+.loader .face .circle {
+    position: absolute;
+    width: 50%;
+    height: 0.1em;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    transform: rotate(var(--deg));
+    transform-origin: left;
+}
+
+.loader .face .circle::before {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    border-radius: 50%;
+    box-shadow: 0 0 2em,
+                0 0 4em,
+                0 0 6em,
+                0 0 8em,
+                0 0 10em,
+                0 0 0 0.5em rgba(255, 255, 0, 0.1);
+}
+
+@keyframes animate {
+    to {
+        transform: rotate(4turn);
+    }
+}
